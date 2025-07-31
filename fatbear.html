@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>SAFIA RAJ3AT 3JOZAAAA</title>
+  <style>
+    body {
+      background-color: #fff0f5;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 20px;
+      color: green;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-top: 20px;
+      color: darkgreen;
+      cursor: pointer;
+    }
+
+    p {
+      font-size: 1.2em;
+      cursor: pointer;
+    }
+
+    @keyframes jump {
+      0%   { transform: translateY(0); }
+      30%  { transform: translateY(-30px); }
+      50%  { transform: translateY(0); }
+      70%  { transform: translateY(-15px); }
+      100% { transform: translateY(0); }
+    }
+
+    .jumping {
+      animation: jump 0.6s ease;
+    }
+
+    .image-container {
+      margin: 30px auto;
+    }
+
+    .image-container img {
+      max-width: 300px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .tooltip-image {
+      position: relative;
+    }
+
+    .tooltip-image img {
+      width: 200px;
+      height: 150px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.15);
+      cursor: pointer;
+    }
+
+    .tooltip-text {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      bottom: -35px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #222;
+      color: #fff;
+      padding: 6px 10px;
+      border-radius: 5px;
+      font-size: 0.9em;
+      white-space: nowrap;
+      transition: opacity 0.3s ease;
+      z-index: 10;
+    }
+
+    .tooltip-image:hover .tooltip-text {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .linked-gallery img {
+      width: 300px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .linked-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <h1 onclick="makeJump(this)">HAPPY BIRTHDAY FOR YOU FATTTTTT BEAR !</h1>
+  <p onclick="makeJump(this)">I HOPE YOU WILL HAVE A GOOD DAY AND TFO 3LIK MKLITCH CAKE AND LEAVE ME ALONE MN3RFCH NAHDAR A333333333333</p>
+
+  <div class="image-container">
+    <img src="bearzahi.jpg" alt="Bear farhan">
+  </div>
+
+  <h2>za3ma CHI TAE DOBAA TA3NAA </h2>
+  <div class="gallery">
+    <div class="tooltip-image">
+      <img src="bear-pizza.jpg" alt="صورة 1">
+      <div class="tooltip-text">a normal day in safia life 7aba tarja3 smina </div>
+    </div>
+    <div class="tooltip-image">
+      <img src="sadsafia.jpg" alt="صورة 2">
+      <div class="tooltip-text">here we can see a sad safia she still fat btw and cute</div>
+    </div>
+    <div class="tooltip-image">
+      <img src="9ahwa.jpg" alt="صورة 3">
+      <div class="tooltip-text">hd chi howa li ra7 y9talha bs7 t7bo </div>
+    </div>
+    <div class="tooltip-image">
+      <img src="ra9d.jpg" alt="صورة 4">
+      <div class="tooltip-text">hna r9ad tbarak allah m3ndi mn9ol</div>
+    </div>
+  </div>
+
+  <h2>hnaaa nbda nfda7 fik كليكي على التصويرة</h2>
+  <div class="gallery linked-gallery">
+    <a href="tad7k.html" target="_blank">
+      <img src="tad7k.jpg" alt="صورة 1">
+    </a>
+    <a href="tabakha.html" target="_blank">
+      <img src="tabakha.jpg" alt="صورة 2">
+    </a>
+    <a href="hi.html" target="_blank">
+      <img src="hi.jpg" alt="صورة 3">
+    </a>
+  </div>
+
+  <footer>
+    © 2025 | حقوق الججلي للكحلوشة تعجبكش نقتلك
+  </footer>
+
+  <script>
+    function makeJump(element) {
+      element.classList.add("jumping");
+      setTimeout(() => {
+        element.classList.remove("jumping");
+      }, 600);
+    }
+  </script>
+</body>
+</html>
